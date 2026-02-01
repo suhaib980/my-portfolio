@@ -1,0 +1,85 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .services {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 120px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+ <h1>Welcome to My Website</h1>
+ <p>You can get the following services here.</p>
+</header>
+<section>
+  <h2 style="text-align:center;">My Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Web Page Design</h3>
+      <p>Simple and responsive website layouts suitable for small projects.</p>
+    </div>
+    <div class="card">
+      <h3>Form Setup</h3>
+      <p>Contact and signup forms with basic validation.</p>
+    </div>
+    <div class="card">
+      <h3>UI Styling</h3>
+      <p>Clean layout, spacing, and color styling for better user experience.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Email: ksuhaib911@email.com</p>
+</footer>
+
+</body>
+</html>
