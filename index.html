@@ -1,108 +1,243 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Home</title>
+  <title>Suhaib Khan | Frontend Developer</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Frontend Developer | Portfolio of Suhaib Khan">
+
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   
     <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
+    /* ===== Base Styles ===== */
 
-    header {
-      background-color: #004466;
-      color: white;
-      padding: 10px;
-      text-align: center;
-  
-    }
-	 
-    .content {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-      padding: 50px;
-      color: Black;
-      margin-bottom: 80px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
 
-      .box {
-      width: 260px;
-      padding: 15px;
-      background-color: White;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+/* ===== Header ===== */
 
-      button {
-      font-size: 16px;
-      padding: 12px 24px;
-      background-color: #004466;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+header {
+  background-color: #004466;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    button:hover {
-      background-color: #ADD8E6;
-    }
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
 
-    footer {
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ADD8E6;
+}
+
+/* ===== Hero Section ===== */
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to right, #f9f9f9, #ffffff);
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  font-size: 24px;
+  color: #004466;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  font-size: 18px;
+  color: #444;
+}
+
+/* ===== Buttons ===== */
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #004466;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0088aa;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background-color: #333;
+  margin-left: 10px;
+}
+
+.secondary-btn:hover {
+  background-color: #555;
+}
+
+
+.about {
+  background-color: #f9f9f9;
+}
+
+.skills {
+  background-color: white;
+}
+
+.projects {
+  background-color: #f9f9f9;
+}
+
+
+.skill-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-box div {
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.project:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+footer {
       background-color: #222;
       color: white;
       text-align: center;
       padding: 20px;
     }
+    
+    @media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    @media (max-width: 600px) {
-      .content {
-        flex-direction: column;
-        align-items: center;
-      }
+  nav {
+    margin-top: 10px;
+  }
 
-      .box {
-        margin-bottom: 20px;
-      }
-    }
+  nav a {
+    margin: 0 10px;
+  }
+}
+
   </style>
 </head>
 <body>
+
 <header>
   <h1>Suhaib Khan</h1>
-  <p>Frontend Web Developer</p>
-  <p>I build clean and responsive websites using HTML, CSS, and basic JavaScript.</p>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
-<nav style="text-align:center; padding:15px;">
-  <a href="index.html">Home</a> |
-  <a href="portfolio.html">Portfolio</a> |
-  <a href="contact.html">Contact</a>
-</nav>
-<section class="content">
-  <div class="box">
-    <h3>Service One</h3>
-    <p>Webpage Design.</p>
-    <a href = "portfolio.html"><button>Learn More</button></a>
-  </div>
 
-  <div class="box">
-    <h3>Service Two</h3>
-    <p>Webpage Fixing.</p>
-    <a href = "portfolio.html"><button>Learn More</button></a>
-  </div>
+<section class="hero">
+  <h2>Hello, I am Suhaib</h2>
+  <h3>Frontend Web Developer</h3>
+  <p>I build clean, responsive, and user-focused web interfaces using modern web technologies.</p>
+  <a href="portfolio.html" class="btn">View My Work</a>
+  <a href="contact.html" class="btn secondary-btn">Contact Me</a>
+</section>
 
-  <div class="box">
-    <h3>Service Three</h3>
-    <p>Code Fixing.</p>
-    <a href = "portfolio.html"><button>Learn More</button></a>
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a frontend developer passionate about building responsive websites
+    using HTML, CSS, and JavaScript. I continuously improve my skills
+    and focus on writing clean and maintainable code.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-box">
+    <div>HTML5</div>
+    <div>CSS3</div>
+    <div>JavaScript</div>
+    <div>Responsive Design</div>
+    <div>DOM Manipulation</div>
   </div>
 </section>
+
+<section class="projects">
+  <h2>Featured Projects</h2>
+  <div class="project-box">
+    <div class="project">
+      <h3>Responsive Landing Page</h3>
+      <p>A mobile-friendly landing page built using HTML and CSS.</p>
+    </div>
+
+    <div class="project">
+      <h3>Contact Form with Validation</h3>
+      <p>A contact form with JavaScript validation and user feedback.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+function showPopup(id) {
+  document.getElementById(id).style.display = "block";
+  document.getElementById('overlay').style.display = "block";
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = "none";
+  document.getElementById('overlay').style.display = "none";
+}
+</script>
+
 <footer>
-<a href="contact.html">
-<button>Contact me</button>
-</a>
+  <p>© 2026 Suhaib Khan. All Rights Reserved.</p>
 </footer>
 
 </body>
