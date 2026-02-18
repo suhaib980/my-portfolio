@@ -1,8 +1,9 @@
-﻿
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Portfolio</title>
+  <title>Portfolio | Suhaib Khan</title>
+  <meta charset="UTF-8">
+<meta name="description" content="Portfolio projects of Suhaib Khan, Frontend Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <style>
     body {
@@ -22,7 +23,7 @@
       padding: 40px;
     }
 
-    .services {
+    .projects {
       display: flex;
       gap: 20px;
       justify-content: center;
@@ -37,6 +38,16 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       text-align: center;
     }
+    
+    .card a {
+      text-decoration: none;
+      color: #004466;
+      font-weight: bold;
+    }
+
+   .card a:hover {
+      text-decoration: underline;
+    }
 
     footer {
       background-color: #222;
@@ -46,7 +57,7 @@
     }
 
     @media (max-width: 700px) {
-      .services {
+      .projects {
         flex-direction: column;
         align-items: center;
       }
@@ -56,30 +67,49 @@
 <body>
 
 <header>
- <h1>Welcome to My Website</h1>
- <p>You can get the following services here.</p>
+ <h1>My Portfolio</h1>
+<p>Here are some projects I have built using HTML, CSS, and JavaScript.</p>
+ <nav style="margin-top:10px;">
+    <a href="index.html" style="margin:0 10px; color:white; text-decoration:none;">Home</a> |
+    <a href="portfolio.html" style="margin:0 10px; color:white; text-decoration:none;">Portfolio</a> |
+    <a href="contact.html" style="margin:0 10px; color:white; text-decoration:none;">Contact</a>
+  </nav>
 </header>
 <section>
-  <h2 style="text-align:center;">My Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Web Page Design</h3>
-      <p>Simple and responsive website layouts suitable for small projects.</p>
-    </div>
-    <div class="card">
-      <h3>Form Setup</h3>
-      <p>Contact and signup forms with basic validation.</p>
-    </div>
-    <div class="card">
-      <h3>UI Styling</h3>
-      <p>Clean layout, spacing, and color styling for better user experience.</p>
-    </div>
+  <h2 style="text-align:center;">My Projects</h2>
+   <div class="projects">
+   
+     <div class="card">
+     <h3>Responsive Landing Page</h3>
+     <p>A clean responsive homepage using Flexbox and media queries.</p>
+     <p><strong>Tech:</strong> HTML, CSS</p>
+     <a href="#">Live Demo</a> |
+     <a href="#">GitHub</a>
+</div>
+
+	 <div class="card">
+     <h3>Form Validation Page</h3>
+     <p>A clean responsive homepage using Flexbox and media queries.</p>
+     <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+     <a href="#">Live Demo</a> |
+     <a href="#">GitHub</a>
+</div>
+	 <div class="card">
+     <h3>Toggle Feature Page</h3>
+     <p>A clean responsive homepage using Flexbox and media queries.</p>
+     <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+     <a href="#">Live Demo</a> |
+     <a href="#">GitHub</a>
+</div>
+    
   </div>
 </section>
 
 <footer>
+  <p>© 2026 Suhaib Khan</p>
   <p>Email: ksuhaib911@email.com</p>
 </footer>
+
 
 </body>
 </html>
