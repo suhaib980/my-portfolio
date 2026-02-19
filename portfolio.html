@@ -1,115 +1,182 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Portfolio | Suhaib Khan</title>
   <meta charset="UTF-8">
-<meta name="description" content="Portfolio projects of Suhaib Khan, Frontend Developer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <style>
+  <meta name="description" content="Portfolio projects of Suhaib Khan, Frontend Developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Suhaib Khan</title>
+
+  <style>
+
+    /* ===== Base ===== */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background: linear-gradient(to right, #f9f9f9, #ffffff);
+      color: #333;
     }
 
+    /* ===== Header ===== */
     header {
       background-color: #004466;
       color: white;
-      padding: 20px;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #ADD8E6;
+    }
+
+    /* ===== Page Title ===== */
+    .page-title {
       text-align: center;
+      padding: 60px 20px 30px;
     }
 
-    section {
-      padding: 40px;
+    .page-title h2 {
+      font-size: 32px;
     }
 
+    /* ===== Projects Section ===== */
     .projects {
       display: flex;
-      gap: 20px;
       justify-content: center;
-      margin-bottom: 120px;
+      gap: 30px;
+      padding: 40px 20px 80px;
+      flex-wrap: wrap;
     }
 
-    .card {
+    .project-card {
       background-color: white;
-      padding: 20px;
-      width: 250px;
+      width: 280px;
+      padding: 25px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
     }
-    
-    .card a {
-      text-decoration: none;
+
+    .project-card h3 {
+      margin-top: 0;
       color: #004466;
-      font-weight: bold;
     }
 
-   .card a:hover {
-      text-decoration: underline;
+    .project-card p {
+      font-size: 15px;
+      color: #555;
     }
 
+    .tech {
+      font-size: 14px;
+      margin: 10px 0;
+      color: #777;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #004466;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0088aa;
+      transform: translateY(-2px); 
+    }
+
+    /* ===== Footer ===== */
     footer {
       background-color: #222;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 20px;
+      font-size: 14px;
     }
 
+    /* ===== Responsive ===== */
     @media (max-width: 700px) {
-      .projects {
+      header {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 0 10px;
       }
     }
+
   </style>
 </head>
+
 <body>
 
-<header>
- <h1>My Portfolio</h1>
-<p>Here are some projects I have built using HTML, CSS, and JavaScript.</p>
- <nav style="margin-top:10px;">
-    <a href="index.html" style="margin:0 10px; color:white; text-decoration:none;">Home</a> |
-    <a href="portfolio.html" style="margin:0 10px; color:white; text-decoration:none;">Portfolio</a> |
-    <a href="contact.html" style="margin:0 10px; color:white; text-decoration:none;">Contact</a>
-  </nav>
-</header>
-<section>
-  <h2 style="text-align:center;">My Projects</h2>
-   <div class="projects">
-   
-     <div class="card">
-     <h3>Responsive Landing Page</h3>
-     <p>A clean responsive homepage using Flexbox and media queries.</p>
-     <p><strong>Tech:</strong> HTML, CSS</p>
-     <a href="#">Live Demo</a> |
-     <a href="#">GitHub</a>
-</div>
+  <header>
+    <h1>Suhaib Khan</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-	 <div class="card">
-     <h3>Form Validation Page</h3>
-     <p>A clean responsive homepage using Flexbox and media queries.</p>
-     <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-     <a href="#">Live Demo</a> |
-     <a href="#">GitHub</a>
-</div>
-	 <div class="card">
-     <h3>Toggle Feature Page</h3>
-     <p>A clean responsive homepage using Flexbox and media queries.</p>
-     <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-     <a href="#">Live Demo</a> |
-     <a href="#">GitHub</a>
-</div>
-    
-  </div>
-</section>
+  <section class="page-title">
+    <h2>My Projects</h2>
+  </section>
 
-<footer>
-  <p>© 2026 Suhaib Khan</p>
-  <p>Email: ksuhaib911@email.com</p>
-</footer>
+  <section class="projects">
 
+    <div class="project-card">
+      <h3>Responsive Homepage</h3>
+      <p>A clean and responsive homepage layout designed for desktop and mobile devices.</p>
+      <div class="tech">HTML • CSS</div>
+      <a href="project-folder/index.html" class="btn">Live Demo</a>
+      <a href="https://github.com/yourusername/project-name" class="btn">GitHub</a>
+
+    </div>
+
+    <div class="project-card">
+      <h3>Contact Form</h3>
+      <p>A contact form with basic validation and structured layout.</p>
+      <div class="tech">HTML • CSS • JavaScript</div> 
+      <a href="project-folder/index.html" class="btn">Live Demo</a>
+      <a href="https://github.com/yourusername/project-name" class="btn">GitHub</a>
+
+    </div>
+
+    <div class="project-card">
+      <h3>Popup Feature</h3>
+      <p>A simple popup modal using JavaScript to improve user interaction.</p>
+      <div class="tech">HTML • CSS • JavaScript</div>
+      <a href="project-folder/index.html" class="btn">Live Demo</a>
+      <a href="https://github.com/yourusername/project-name" class="btn">GitHub</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Suhaib Khan. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
