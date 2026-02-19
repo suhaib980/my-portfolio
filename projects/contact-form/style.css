@@ -1,1 +1,61 @@
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
 
+    header {
+      background-color:  #004466;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .contact-box {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+	  label {
+       display: block;
+       text-align: left;
+       margin-top: 10px;
+       font-weight: bold;
+    }
+
+   input, textarea {
+      border-radius: 5px;
+  	  border: 1px solid #ccc;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color:  #004466;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #ADD8E6;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+    }
+  </style>
