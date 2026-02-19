@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Suhaib Khan | Frontend Developer</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Frontend Developer | Portfolio of Suhaib Khan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="style.css">      
+</head>
+<body>
+
+<header>
+ <h1>Welcome to My Website</h1>
+ <p>You can get the following services here.</p>
+</header>
+<section>
+  <h2 style="text-align:center;">My Services</h2>
+  <div class="services">
+  
+    <div class="card">
+  <h3>Web Page Design</h3>
+  <p>Simple and responsive website layouts suitable for small projects.</p>
+  <button id="btn" onclick="showPopup('popup1')">Learn More</button>
+
+  <div id="popup1" class="popup">
+    <p>Full details: I can create responsive web pages using HTML, CSS, and simple JavaScript. Layouts fit desktop and mobile perfectly.</p>
+    <button onclick="closePopup('popup1')">Close</button>
+  </div>
+</div>
+</section>
+
+<script src="script.js"></script>
+<footer>
+  <p>© 2026 Suhaib Khan. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
