@@ -1,0 +1,117 @@
+ <style>
+
+    /* ===== Base Styles ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ADD8E6;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background-color: white;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      font-size: 22px;
+      color: #004466;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* ===== Button ===== */
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #004466;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0088aa;
+    }
+
+    /* ===== About Section ===== */
+    .about {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #f4f4f4;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+      color: #444;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+    }
+
+  </style>
